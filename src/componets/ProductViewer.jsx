@@ -18,7 +18,7 @@ const ProductViewer = () => {
             <h2>Take a closer look.</h2>
 
             <div className="controls">
-                <p className="info">MacbookPro 16" in {color} / Space Black scale {scale}</p>
+                <p className="info">MacbookPro | Avalable in 14" & 16" in Space Gray & Dark colors</p>
 
                 <div className="flex-center gap-5 mt-5">
                     <div className="color-control">
@@ -28,6 +28,12 @@ const ProductViewer = () => {
                         <div onClick={()=> setColor('#2e2c2e')}
                              className={clsx('bg-neutral-900', color === '#2e2c2e' && 'active')}
                         />
+                        {/*<div onClick={()=> setColor('#d623d6')}
+                             className={clsx('bg-pink-400', color === '#d623d6' && 'active')}
+                        />
+                        <div onClick={()=> setColor('#0051ff')}
+                             className={clsx('bg-blue-800', color === '#0051ff' && 'active')}
+                        />*/}
 
                     </div>
 
