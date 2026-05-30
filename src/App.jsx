@@ -8,6 +8,7 @@ import Showcase from "./componets/Showcase.jsx";
 import Features from "./componets/Features.jsx";
 import Highligths from "./componets/Highligths.jsx";
 import Footer from "./componets/Footer.jsx";
+import Performance from "./componets/Performance.jsx";
 
 gsap.registerPlugin(ScrollTrigger)
 

@@ -1,7 +1,7 @@
 
-const Highligths = () => {
+const Highlights = () => {
     return (
-        <div>Highligths</div>
+        <div>Highlights</div>
     )
 }
-export default Highligths
+export default Highlights
