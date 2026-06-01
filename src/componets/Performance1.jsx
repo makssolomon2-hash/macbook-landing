@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import {performanceImages} from "../constants/index.js";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -80,10 +81,21 @@ export default function Performance() {
                         </div>
                     ))}
 
+                   {/* <div className="performance-item">
+                        {performanceImages.map((item, index ) => (
+                            <img
+                                key={index}
+                                src={item.src}
+                                className={item.id}
+                                alt={item.alt || `Performance Image #${index + 1}`}
+                            />
+                        ))}
+                    </div>*/}
+
                     {/* p5: Excluded from breathing animation (no breathing-target class) */}
                     <div className="performance-item relative aspect-[2/1] md:aspect-auto lg:col-span-4 rounded-2xl overflow-hidden bg-muted shadow-md h-64 lg:h-80">
                         <img
-                            src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200&h=400&fit=crop&q=80&sig=5"
+                            src=""
                             alt="Performance metric 5 (Static)"
                             className="w-full h-full object-cover"
                         />
