@@ -283,11 +283,11 @@ body {
         }
 
         #f-canvas {
-            @apply !w-max !h-dvh relative z-40;
+            @apply !w-full !h-dvh relative z-40;
         }
 
         .box {
-            @apply max-w-xl absolute;
+            @apply max-w-xs absolute;
 
             p {
                 @apply lg:h3-semibold base-semibold;
