@@ -24,7 +24,7 @@ const App = () => {
             <Performance />
             {/*<Performance1 />*/}
             <Features />
-            {/*<Highligths />*/}
+            <Highligths />
             <Footer />
         </main>
 
