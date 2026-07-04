@@ -152,24 +152,6 @@ Runs a local preview of the production build.
 npm run lint
 ```
 
-Checks the project for linting issues.
-
-## Deployment
-
-You can deploy this project to any static hosting platform that supports Vite builds, for example:
-
-* Vercel
-* Netlify
-* GitHub Pages
-* Cloudflare Pages
-
-For most platforms, use these settings:
-
-```bash
-Build command: npm run build
-Output folder: dist
-```
-
 ## Notes
 
 * This project is frontend-only and does not require a backend server.
