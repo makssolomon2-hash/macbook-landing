@@ -47,13 +47,13 @@ http://localhost:5173
 ## Project Structure
 
 ```bash
-macbook-landing-2/
+macbook-landing/
 ├── public/
 │   ├── videos/          # Hero and feature videos
 │   ├── *.png            # Images used in sections
 │   └── *.svg            # Icons and visual assets
 ├── src/
-│   ├── componets/       # Main React components
+│   ├── components/       # Main React components
 │   │   ├── models/      # 3D MacBook model components
 │   │   └── tree/        # 3D model switching logic
 │   ├── constants/       # Navigation, features, footer links, image data
@@ -65,7 +65,7 @@ macbook-landing-2/
 └── README.md
 ```
 
-> Note: the folder name is currently written as `componets` in the project. Keep this spelling when importing files unless you rename the folder everywhere.
+> Note: the folder name is `components` in the project.
 
 ## Getting Started
 
@@ -74,7 +74,7 @@ Follow these steps to run the project locally.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/makssolomon2-hash/macbook-landing-2.git
+git clone https://github.com/makssolomon2-hash/macbook-landing.git
 ```
 
 ### 2. Go into the project folder

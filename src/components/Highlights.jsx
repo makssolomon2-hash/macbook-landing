@@ -33,7 +33,7 @@ const Highlights = () => {
                     </div>
                     <div>
                         <img src="/sun.png" alt="Sun" />
-                        <p>A stuning <br />
+                        <p>A stunning <br />
                             Liquid Retina XDR <br />
                             display.</p>
                     </div>
