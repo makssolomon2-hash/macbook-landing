@@ -65,7 +65,7 @@ macbook-landing/
 └── README.md
 ```
 
-> Note: the folder name is `components` in the project.
+
 
 ## Getting Started
 
