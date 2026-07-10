@@ -1,4 +1,4 @@
-
+<img width="2560" height="1440" alt="Screenshot 2026-07-05 194500" src="https://github.com/user-attachments/assets/bbac7e02-c59c-436d-9439-6f02007515b1" />
 
 # MacBook Pro Landing Page
 
@@ -164,7 +164,7 @@ npm run lint
 * Large video and 3D assets can affect loading performance, so optimize assets before deploying publicly.
 * For best results, use a modern browser with WebGL support.
 
-<img width="2560" height="1440" alt="Screenshot 2026-07-05 194500" src="https://github.com/user-attachments/assets/bbac7e02-c59c-436d-9439-6f02007515b1" />
+
 <img width="2560" height="1440" alt="Screenshot 2026-07-05 194606" src="https://github.com/user-attachments/assets/d106988d-f94e-4be1-8f6c-28ec8a3abcba" />
 
 Maks Solomon.
