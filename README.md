@@ -53,7 +53,7 @@ macbook-landing-2/
 │   ├── *.png            # Images used in sections
 │   └── *.svg            # Icons and visual assets
 ├── src/
-│   ├── componets/       # Main React components
+│   ├── components/       # Main React components
 │   │   ├── models/      # 3D MacBook model components
 │   │   └── tree/        # 3D model switching logic
 │   ├── constants/       # Navigation, features, footer links, image data
@@ -65,7 +65,7 @@ macbook-landing-2/
 └── README.md
 ```
 
-> Note: the folder name is currently written as `componets` in the project. Keep this spelling when importing files unless you rename the folder everywhere.
+> Note: the folder name is currently written as `components` in the project.
 
 ## Getting Started
 
