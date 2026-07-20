@@ -12,7 +12,7 @@ import Performance from "./components/Performance.jsx";
 
 
 gsap.registerPlugin(ScrollTrigger)
-
+//UPDATE
 const App = () => {
     return (
         <main>
