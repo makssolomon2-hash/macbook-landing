@@ -5,23 +5,6 @@ const StudioLights = () => {
     return (
        <group name={"lights"}>
            <group>
-           {/*
-           <Environment resolution={256}>
-
-                   <Lightformer
-                       form="rect"
-                       intensity={10}
-                       position={[-10,5,-5]}
-                       rotation-y={Math.PI / 2}
-                   />
-                   <Lightformer
-                       form="rect"
-                       intensity={10}
-                       position={[10,0,1]}
-                       rotation-y={Math.PI / 2}
-                   />
-           </Environment>
-           */}
                    <spotLight
                         position={[-25,80,-40]}
                         angle={0.1356}

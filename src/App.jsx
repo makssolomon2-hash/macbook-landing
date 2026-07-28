@@ -10,7 +10,6 @@ import Highlights from "./components/Highlights.jsx";
 import Footer from "./components/Footer.jsx";
 import Performance from "./components/Performance.jsx";
 
-
 gsap.registerPlugin(ScrollTrigger)
 //UPDATE
 const App = () => {
@@ -21,7 +20,6 @@ const App = () => {
             <ProductViewer />
             <Showcase />
             <Performance />
-            {/*<Performance1 />*/}
             <Features />
             <Highlights />
             <Footer />
