@@ -12,16 +12,24 @@ const Showcase = () => {
                 scrollTrigger: {
                     trigger: '#showcase',
                     start:'top  top',
-                    end:'bottom top',
+                    end:'bottom 55%',
                     scrub: true,
                     pin: true,
+                    markers: true,
                 }
             });
 
             timeline
                 .to('.mask img', {
                     transform: 'scale(1.1)',
-            }).to('.content', { opacity: 1, y:0, ease: 'power1.in' });
+                    y:-150,
+            }).to('.content', {
+                opacity: 1,
+                y:-220,
+                ease: 'power1.in' ,
+            });
+
+
         }
     }, [isTablet])
 
@@ -34,7 +42,7 @@ const Showcase = () => {
                 </div>
             </div>
 
-                <div className="content">
+                <div className="content -top-10">
                     <div className="wrapper">
                         <div className="lg:max-w-md">
                             <h2>Rocket Chip</h2>
