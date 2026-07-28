@@ -18,17 +18,19 @@ const Performance = () => {
             // text animation
             gsap.fromTo(
                 ".content p",
-                { autoAlpha: 0, y: 24 },
+                { autoAlpha: 0, y: 40 },
                 {
                     autoAlpha: 1,
                     y: 0,
-                    duration: 1.8,
+                    duration: 3,
                     ease: "power2.out",
                     scrollTrigger:{
                         trigger: sectionRef.current,
-                        start: "top 80%",
+                        start: "80% 85%",
+                        end:"top top",
                         toggleActions:"play none none reverse",
                         invalidateOnRefresh: true,
+                        markers: true,
                     },
                 }
             );
