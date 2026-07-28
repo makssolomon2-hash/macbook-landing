@@ -11,6 +11,7 @@ import Footer from "./components/Footer.jsx";
 import Performance from "./components/Performance.jsx";
 import { ReactLenis } from 'lenis/react';
 import 'lenis/dist/lenis.css';
+import ModelLoader from './components/ModelLoader.jsx';
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -24,7 +25,7 @@ const App = () => {
             // smoothTouch: false,  // usually keep false for better mobile feel
             }}
         >
-            <main>
+            <main>              
                 <NavBar />
                 <Hero />
                 <ProductViewer />
@@ -32,7 +33,7 @@ const App = () => {
                 <Performance />
                 <Features />
                 <Highlights />
-                <Footer />
+                <Footer />              
             </main>          
         </ReactLenis>
     );

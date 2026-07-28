@@ -25,7 +25,7 @@ const Showcase = () => {
 
             }).to('.content', {
                 opacity: 1,
-                y:-100,
+                y:-150,
                 ease: 'power1.in' ,
             });
 

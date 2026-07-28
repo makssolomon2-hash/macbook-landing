@@ -30,7 +30,7 @@ const Performance = () => {
                         end:"top top",
                         toggleActions:"play none none reverse",
                         invalidateOnRefresh: true,
-                        markers: true,
+                        /* markers: true, */
                     },
                 }
             );
