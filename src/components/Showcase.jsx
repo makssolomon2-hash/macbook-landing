@@ -12,20 +12,20 @@ const Showcase = () => {
                 scrollTrigger: {
                     trigger: '#showcase',
                     start:'top  top',
-                    end:'bottom 55%',
+                    end:'bottom 85%',
                     scrub: true,
                     pin: true,
-                    markers: true,
+                   /* markers: true,*/
                 }
             });
 
             timeline
                 .to('.mask img', {
                     transform: 'scale(1.1)',
-                    y:-150,
+
             }).to('.content', {
                 opacity: 1,
-                y:-220,
+                y:-100,
                 ease: 'power1.in' ,
             });
 

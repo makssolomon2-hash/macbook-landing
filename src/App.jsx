@@ -9,22 +9,33 @@ import Features from "./components/Features.jsx";
 import Highlights from "./components/Highlights.jsx";
 import Footer from "./components/Footer.jsx";
 import Performance from "./components/Performance.jsx";
+import { ReactLenis } from 'lenis/react';
+import 'lenis/dist/lenis.css';
 
 gsap.registerPlugin(ScrollTrigger)
-//UPDATE
+
 const App = () => {
     return (
-        <main>
-            <NavBar />
-            <Hero />
-            <ProductViewer />
-            <Showcase />
-            <Performance />
-            <Features />
-            <Highlights />
-            <Footer />
-        </main>
+        <ReactLenis root
+            options={{
+            duration: 1.3,          // how long the scroll animation lasts
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // nice easing
+            smoothWheel: true,
+            // smoothTouch: false,  // usually keep false for better mobile feel
+            }}
+        >
+            <main>
+                <NavBar />
+                <Hero />
+                <ProductViewer />
+                <Showcase />
+                <Performance />
+                <Features />
+                <Highlights />
+                <Footer />
+            </main>          
+        </ReactLenis>
+    );
+};
 
-    )
-}
 export default App
