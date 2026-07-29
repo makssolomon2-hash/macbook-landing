@@ -7,7 +7,7 @@ import {footerLinks, navLinks} from "../constants/index.js";
 const Footer = () => {
    
 
-    useGSAP(() => {
+    /* useGSAP(() => {
         gsap.fromTo('.footer', {
             y: 200,
             opacity: 0,   
@@ -18,7 +18,7 @@ const Footer = () => {
             duration: 2.5,
             ease: 'power1.inOut',
         });
-    })
+    }) */
 
     return (
        <section className="footer container mx-auto py-7 max-lg:px-5 ">
