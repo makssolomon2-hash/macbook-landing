@@ -192,6 +192,10 @@ body {
                 @apply w-full object-cover object-center;
             }
 
+            /* .showcase-img {
+                @apply w-full object-cover object-center;
+            } */
+
             .mask {
                 @apply absolute h-full top-0 lg:-top-20 xl:top-0;
 
@@ -291,6 +295,7 @@ body {
         .box {
             @apply p-5 max-w-xs absolute z-41 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl shadow-2xl;
             @apply lg:bg-transparent lg:backdrop-blur-none lg:border-transparent lg:shadow-none;
+            
 
 
             p {
@@ -468,7 +473,7 @@ body {
 .pl-bar {
     width: 140px;
     height: 1.5px;
-    background: transparent;
+    background:rgba(62, 62, 62, 0.103);
     border-radius: 1px;
     overflow: hidden;
 }

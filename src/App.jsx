@@ -24,19 +24,20 @@ const PageLoader = () => {
 
         tl
         .to('.pl-bar-fill',
-            { scaleX: 1, duration: 1.1, ease: 'power2.inOut',  },
+            { scaleX: 1, duration: 1.1, ease: 'power2.inOut',},
             '-=0.2'
         ).to(".pl-bar",{
             scaleX: 0,
             opacity:0,
             ease: 'power2.inOut',
+            duration: 0.5,
         })
         .fromTo('.pl-title',
             { autoAlpha: 0, scale:1, },
             { autoAlpha: 1,  duration: 1, ease: 'power2.out', scale:3 },
             '-=0.25'
         )
-        .to(el, { yPercent: -100, duration: 0.7, ease: 'power4.inOut',delay:0,  });
+        .to(el, { yPercent: -100, duration: 0.5, ease: 'power4.inOut',delay:0,});
     }, { scope: loaderRef });
 
     return (

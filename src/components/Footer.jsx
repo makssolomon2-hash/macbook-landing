@@ -1,7 +1,25 @@
-import React from "react";
+import {useMediaQuery} from "react-responsive";
+import {useGSAP} from "@gsap/react";
+import gsap from "gsap";
+
 import {footerLinks, navLinks} from "../constants/index.js";
 
 const Footer = () => {
+   
+
+    useGSAP(() => {
+        gsap.fromTo('.footer', {
+            y: 200,
+            opacity: 0,   
+        },{
+            y: 0,
+            opacity: 1,
+            stagger: 0.5,
+            duration: 2.5,
+            ease: 'power1.inOut',
+        });
+    })
+
     return (
        <section className="footer container mx-auto py-7 max-lg:px-5 ">
            <div className="info flex-between ">
@@ -11,10 +29,11 @@ const Footer = () => {
                    <a className="underline cursor-pointer text-primary mx-0.5 "> other retailer </a>
                    near you. Or call 000800 040 1966.</p>
                <img src="/public/logo.svg" alt="Apple logo" className="cursor-pointer" />
-
            </div>
+
            <hr className="my-7  text-gray-600 w-80%"></hr>
-           <div className="flex flex-col lg:flex-row lg:items-center justify-between max-lg:mt-5 gap-5 text-sm">
+           
+           <div className="info2 flex flex-col lg:flex-row lg:items-center justify-between max-lg:mt-5 gap-5 text-sm">
                <p>Copyright © 2024 Apple Inc. All rights reserved.</p>
                <div className="lex flex-col lg:flex-row lg:items-center justify-between max-lg:mt-5 gap-5 text-sm">
                    <ul className="lg:divide-x flex flex-col lg:flex-row gap-2.5">
