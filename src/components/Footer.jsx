@@ -21,7 +21,7 @@ const Footer = () => {
     }) */
 
     return (
-       <section className="footer container mx-auto py-7 max-lg:px-5 ">
+       <section className="footer container mx-auto py-7 lap:px-20 max-lg:px-5 ">
            <div className="info flex-between ">
                <p>More ways to shop:
                    <a className=" underline cursor-pointer text-primary mx-0.5;"> Find an Apple Store </a>

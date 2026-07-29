@@ -5,14 +5,15 @@ import gsap from "gsap";
 
 const Showcase = () => {
     const isTablet = useMediaQuery({query: '(max-width: 1024px)'});
+    const isLaptop = useMediaQuery({query: '(max-width: 1900px)'});
 
     useGSAP(() => {
         if (!isTablet) {
             const timeline = gsap.timeline({
                 scrollTrigger: {
                     trigger: '#showcase',
-                    start:'top  top',
-                    end:'bottom 85%',
+                    start:'top 9%',
+                    end:'bottom 95%',
                     scrub: true,
                     pin: true,
                    /* markers: true,*/
@@ -21,11 +22,12 @@ const Showcase = () => {
 
             timeline
                 .to('.mask img', {
+                    y:0,
                     transform: 'scale(1.1)',
 
             }).to('.content', {
                 opacity: 1,
-                y:-150,
+                y:0,
                 ease: 'power1.in' ,
             });
 
@@ -43,7 +45,7 @@ const Showcase = () => {
                 </div>
             </div>
 
-                <div className="content -top-10">
+                <div className="content 2k:-top-10 ">
                     <div className="wrapper">
                         <div className="lg:max-w-md">
                             <h2>Rocket Chip</h2>

@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@theme {
+    /* Очищаємо дефолтні breakpoints (опціонально) */
+
+
+    /* Твої breakpoints */
+    --breakpoint-tab: 48rem;    /* 768px */
+    --breakpoint-lap: 64rem;    /* 1024px */
+    --breakpoint-fhd: 120rem;   /* 1920px */
+    --breakpoint-2k:  160rem;   /* 2560px */
+    --breakpoint-4k:  240rem;   /* 3840px */
+}
 
 
 @font-face {
@@ -59,6 +70,7 @@ body {
     background-color: #000;
     color: var(--color-dark-100);
     font-family: var(--font-semibold);
+
 }
 
 @utility flex-center {
@@ -89,12 +101,13 @@ body {
     @apply font-medium text-xs;
 }
 
+
 @layer components {
     header {
         @apply w-screen fixed top-0 left-0 z-51 flex-center bg-black min-h-[7vh];
 
         nav {
-            @apply container mx-auto flex-between px-5 2xl:px-0;
+            @apply container mx-auto flex-between px-5 2xl:px-20;
 
             img {
                 @apply cursor-pointer hover:-translate-y-0.5 transition-all duration-300 ease-in-out;
@@ -121,7 +134,7 @@ body {
             @apply relative z-10 col-center lg:translate-y-16;
 
             h1 {
-                @apply font-semibold lg:text-3xl 2xl:text-5xl text-white;
+                @apply font-semibold lg:text-3xl 2xl:text-4xl text-white;
             }
 
             img {
@@ -183,7 +196,7 @@ body {
     }
 
     #showcase {
-        @apply relative;
+        @apply relative ;
 
         .media {
             @apply relative lg:overflow-hidden;
@@ -230,7 +243,7 @@ body {
     }
 
     #performance {
-        @apply w-dvw h-full overflow-hidden pt-20 lg:pt-20 flex flex-col items-center relative xl:-top-40;
+        @apply w-dvw h-full overflow-hidden pt-20 lg:pt-20 flex flex-col items-center relative 2k:-top-40;
 
         h2 {
             @apply font-semibold text-3xl lg:text-6xl text-white max-w-2xl text-center;
@@ -282,7 +295,7 @@ body {
     }
 
     #features {
-        @apply pt-40 relative xl:-top-40;
+        @apply pt-40 relative 2k:-top-40;
 
         h2 {
             @apply text-white font-semibold text-3xl lg:text-7xl text-center max-w-3xl mx-auto;
@@ -306,7 +319,7 @@ body {
 
 
     #highlights {
-        @apply container mx-auto lg:py-40 max-lg:px-5  ;
+        @apply container mx-auto 2k:py-40 max-lg:px-5  ;
 
 
         h2 {
@@ -319,7 +332,7 @@ body {
         }
 
         .masonry {
-            @apply grid grid-cols-1 lg:grid-cols-2 gap-5 mt-20 text-[#F5F5F7];
+            @apply grid grid-cols-1 lg:grid-cols-2 gap-5 mt-20 text-[#F5F5F7] fhd:px-200;
 
 
             .left-column {
@@ -413,7 +426,7 @@ body {
     }
 
     footer {
-        @apply container mx-auto py-7 max-lg:px-5;
+        @apply container mx-auto py-7 max-lg:px-5 ;
 
         .info {
             @apply flex-between;
