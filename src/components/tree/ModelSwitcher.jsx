@@ -2,14 +2,13 @@
 import React from 'react';
 import { useRef } from 'react';
 import gsap from "gsap";
-import {OrbitControls, PresentationControls} from "@react-three/drei";
+import {PresentationControls} from "@react-three/drei";
 import MacbookModel16 from "../models/Macbook-16.jsx";
 import MacbookModel14 from "../models/Macbook-14.jsx";
 import {useGSAP} from "@gsap/react";
 
 
-
-const ANIMATION_DURATION = 1;
+const ANIMATION_DURATION = 1.07;
 const OFFSET_DISTANCE = 5.54;
 
 const fadeMeshes = (group, opacity) => {
@@ -17,7 +16,7 @@ const fadeMeshes = (group, opacity) => {
 
     group.traverse((child) => {
         if(child.isMesh) {
-            child.material.transporter = true;
+            child.material.transparent = true;
             gsap.to(child.material, { opacity, duration: ANIMATION_DURATION})
         }
     })
@@ -54,12 +53,7 @@ const ModelSwitcher = ({scale, isMobile}) => {
         speed: 0.8,
         zoom: 10,
         polar: [-Math.PI,Math.PI],
-        //azimuth:[-Infinity,Infinity],
         config: {mass:1, tension: 0, friction: 26}
-        //enableZoom: true,
-        /*zoomSpeed={1}
-        minZoom={0.5}
-        maxZoom={20} */
     }
 
     return (

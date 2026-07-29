@@ -1,5 +1,6 @@
 import {useMediaQuery} from "react-responsive";
 import {useGSAP} from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 
 const Highlights = () => {
@@ -14,7 +15,7 @@ const Highlights = () => {
             y: 0,
             opacity: 1,
             stagger: 0.5,
-            duration: 1,
+            duration: 1.5,
             ease: 'power1.inOut',
         });
     })

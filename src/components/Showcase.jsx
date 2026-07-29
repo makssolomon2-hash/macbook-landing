@@ -12,29 +12,38 @@ const Showcase = () => {
                 scrollTrigger: {
                     trigger: '#showcase',
                     start:'top  top',
-                    end:'bottom top',
+                    end:'bottom 85%',
                     scrub: true,
                     pin: true,
+                   /* markers: true,*/
                 }
             });
 
             timeline
                 .to('.mask img', {
                     transform: 'scale(1.1)',
-            }).to('.content', { opacity: 1, y:0, ease: 'power1.in' });
+
+            }).to('.content', {
+                opacity: 1,
+                y:-150,
+                ease: 'power1.in' ,
+            });
+
+
         }
     }, [isTablet])
 
     return (
         <section id="showcase">
             <div className="media">
-                <video src="/videos/game.mp4" loop muted autoPlay playsInline/>
+                {/* <img src="/videos/coding.jpg" className="showcase-img"/> */}
+                <video src="/videos/new-video3.mp4" loop muted autoPlay playsInline/>
                 <div className="mask">
                     <img src="/mask-logo.svg" />
                 </div>
             </div>
 
-                <div className="content">
+                <div className="content -top-10">
                     <div className="wrapper">
                         <div className="lg:max-w-md">
                             <h2>Rocket Chip</h2>

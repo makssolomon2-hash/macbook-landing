@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+
+
 @font-face {
     font-family: "Regular";
     src: url("/fonts/regular.otf");
@@ -89,7 +91,7 @@ body {
 
 @layer components {
     header {
-        @apply w-screen fixed top-0 left-0 z-50 flex-center bg-black min-h-[7vh];
+        @apply w-screen fixed top-0 left-0 z-51 flex-center bg-black min-h-[7vh];
 
         nav {
             @apply container mx-auto flex-between px-5 2xl:px-0;
@@ -190,6 +192,10 @@ body {
                 @apply w-full object-cover object-center;
             }
 
+            /* .showcase-img {
+                @apply w-full object-cover object-center;
+            } */
+
             .mask {
                 @apply absolute h-full top-0 lg:-top-20 xl:top-0;
 
@@ -224,7 +230,7 @@ body {
     }
 
     #performance {
-        @apply w-dvw h-full overflow-hidden pt-20 lg:pt-20 flex flex-col items-center relative;
+        @apply w-dvw h-full overflow-hidden pt-20 lg:pt-20 flex flex-col items-center relative xl:-top-40;
 
         h2 {
             @apply font-semibold text-3xl lg:text-6xl text-white max-w-2xl text-center;
@@ -276,7 +282,7 @@ body {
     }
 
     #features {
-        @apply pt-40 relative;
+        @apply pt-40 relative xl:-top-40;
 
         h2 {
             @apply text-white font-semibold text-3xl lg:text-7xl text-center max-w-3xl mx-auto;
@@ -289,6 +295,7 @@ body {
         .box {
             @apply p-5 max-w-xs absolute z-41 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl shadow-2xl;
             @apply lg:bg-transparent lg:backdrop-blur-none lg:border-transparent lg:shadow-none;
+            
 
 
             p {
@@ -436,4 +443,44 @@ body {
             }
         }
     }
+}
+
+.pl-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    pointer-events: none;
+}
+
+.pl-logo {
+    width: 28px;
+    height: auto;
+}
+
+.pl-title {
+    color: #f5f5f7;
+    font-family: var(--font-semibold);
+    font-size: 1.125rem;
+    letter-spacing: 0.04em;
+}
+
+.pl-bar {
+    width: 140px;
+    height: 1.5px;
+    background:rgba(62, 62, 62, 0.103);
+    border-radius: 1px;
+    overflow: hidden;
+}
+
+.pl-bar-fill {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    transform-origin: left center;
+    transform: scaleX(0);
 }
