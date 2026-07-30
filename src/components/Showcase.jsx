@@ -40,12 +40,12 @@ const Showcase = () => {
             <div className="media">
                 {/* <img src="/videos/coding.jpg" className="showcase-img"/> */}
                 <video src="/videos/new-video3.mp4" loop muted autoPlay playsInline/>
-                <div className="mask">
+                <div className="mask 2k:-top-50">
                     <img src="/mask-logo.svg" />
                 </div>
             </div>
 
-                <div className="content 2k:-top-10 ">
+                <div className="content 2k:-top-50 ">
                     <div className="wrapper">
                         <div className="lg:max-w-md">
                             <h2>Rocket Chip</h2>
